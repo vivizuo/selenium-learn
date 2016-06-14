@@ -12,6 +12,7 @@
         <seleniumhq.version>2.53.0</seleniumhq.version>
         <guava.version>19.0</guava.version>
         <common-lang3.version>3.4</common-lang3.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
     <dependencies>
@@ -30,5 +31,12 @@
             <artifactId>commons-lang3</artifactId>
             <version>${common-lang3.version}</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 </project>
