@@ -31,14 +31,6 @@ public class TaobaoLogin {
         WebElement loginButton = driver.findElement(By.id("J_SubmitStatic"));
         loginButton.click();
         System.out.println("cookies: " + driver.manage().getCookies());
-        driver.get("https://www.taobao.com/go/act/sale/keyword-dictionary.php");
-
-        List<WebElement> items = driver.findElement(By.id("Firstcoke"))
-                .findElement(By.tagName("ul"))
-                .findElements(By.tagName("li"));
-        for (WebElement item : items) {
-            item.findElement(By.tagName("a")).click();
-        }
         //driver.close();
     }
 }
